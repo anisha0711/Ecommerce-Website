@@ -2338,6 +2338,7 @@
     {
       "email": "test@gmail.com",
       "password": "Qwerty123",
+      "role": "user",
       "addresses": [
         {
           "name": "Anisha Modak",
@@ -2363,8 +2364,16 @@
     {
       "email": "demo@gmail.com",
       "password": "Qwerty123",
+      "role": "user",
       "addresses": [],
       "id": 1
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "Admin@123",
+      "addresses": [],
+      "role": "admin",
+      "id": 2
     }
   ],
   "cart": [],
@@ -2429,8 +2438,72 @@
         "state": "West Bengal",
         "pinCode": "743134"
       },
-      "status": "pending",
+      "status": "dispatched",
       "id": 1
+    },
+    {
+      "items": [
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        }
+      ],
+      "totalAmount": 1499,
+      "totalItems": 1,
+      "user": {
+        "email": "test@gmail.com",
+        "password": "Qwerty123",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Anisha Modak",
+            "email": "test@gmail.com",
+            "city": "Kolkata",
+            "state": "West Bengal",
+            "pinCode": "743134",
+            "phone": "1234567788",
+            "street": "11th Main"
+          },
+          {
+            "name": "Anisha Modak",
+            "email": "anishamodak07@gmail.com",
+            "phone": "123456789",
+            "street": "A/189",
+            "city": "Halisahar",
+            "state": "West Bengal",
+            "pinCode": "743134"
+          }
+        ],
+        "id": 1
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Anisha Modak",
+        "email": "test@gmail.com",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "pinCode": "743134",
+        "phone": "1234567788",
+        "street": "11th Main"
+      },
+      "status": "delivered",
+      "id": 2
     }
   ]
 }

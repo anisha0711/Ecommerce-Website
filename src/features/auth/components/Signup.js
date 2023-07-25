@@ -41,7 +41,9 @@ export default function Signup() {
                 createUserAsync({ 
                   email: data.email, 
                   password: data.password, 
-                  addresses:[] 
+                  addresses:[] ,
+                  role:'user'
+                  //TODO: this role can directly given on backend
                 })
               );
               console.log(data);
