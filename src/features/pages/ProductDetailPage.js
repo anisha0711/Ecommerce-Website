@@ -1,3 +1,4 @@
+import Footer from "../common/Footer";
 import Navbar from "../navbar/Navbar";
 import ProductDetail from "../product-list/components/ProductDetail";
 function ProductDetailPage() {
@@ -6,6 +7,7 @@ function ProductDetailPage() {
             <Navbar>
                 <ProductDetail></ProductDetail>
             </Navbar>
+            <Footer></Footer>
         </div>
      );
 }
