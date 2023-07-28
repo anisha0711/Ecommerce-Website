@@ -15,8 +15,6 @@ export default function Signup() {
   } = useForm();
 
 
-  console.log(errors);
-
   return (
     <>
     {user && <Navigate to="/" replace={true}></Navigate>}

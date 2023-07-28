@@ -1,4 +1,4 @@
-import Cart from "../cart/Cart";
+import Cart from "../features/cart/Cart";
 
 function CartPage() {
     return <div>
@@ -6,4 +6,4 @@ function CartPage() {
     </div>
 }
  
-export default CartPage;
+export default CartPage; 

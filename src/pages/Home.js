@@ -1,6 +1,6 @@
-import Footer from "../common/Footer";
-import Navbar from "../navbar/Navbar";
-import ProductList from "../product-list/components/ProductList";
+import Footer from "../features/common/Footer";
+import Navbar from "../features/navbar/Navbar";
+import ProductList from "../features/product-list/components/ProductList";
 
 function Home() {
     return ( 

@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useForm } from "react-hook-form";
 import { selectError, selectLoggedInUser} from '../authSlice';
 import { Link, Navigate } from 'react-router-dom';
-import { checkUserAsync } from '../authSlice';
+import { loginUserAsync } from '../authSlice';
 
 export default function Login() {
   const dispatch = useDispatch();
@@ -15,7 +15,6 @@ export default function Login() {
     formState: { errors },
   } = useForm();
 
-  console.log(errors);
 
   return (
     <>
@@ -36,7 +35,7 @@ export default function Login() {
           <form noValidate
           onSubmit={handleSubmit((data) => {
             dispatch(
-              checkUserAsync({ email: data.email, password: data.password })
+              loginUserAsync({ email: data.email, password: data.password })
             );
           })}
           className="space-y-6">
@@ -88,9 +87,9 @@ export default function Login() {
                   <p className='text-red-500'>{errors.password.message}</p>
                 )}
               </div>
-              {error && (
-                  <p className='text-red-500'>{error.message}</p>
-                )}
+              {error && 
+                  <p className='text-red-500'>{error || error.message}</p>
+                }
             </div>
 
             <div>

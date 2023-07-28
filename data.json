@@ -2359,6 +2359,20 @@
       "addresses": [],
       "role": "admin",
       "id": 2
+    },
+    {
+      "email": "anishamodak07@gmail.com",
+      "password": "Modak@123",
+      "addresses": [],
+      "role": "user",
+      "id": 3
+    },
+    {
+      "email": "anisha@gmail.com",
+      "password": "Qwerty123",
+      "addresses": [],
+      "role": "user",
+      "id": 4
     }
   ],
   "cart": [],

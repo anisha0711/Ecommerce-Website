@@ -1,6 +1,6 @@
-import Footer from "../common/Footer";
-import Navbar from "../navbar/Navbar";
-import ProductDetail from "../product-list/components/ProductDetail";
+import Footer from "../features/common/Footer";
+import Navbar from "../features//navbar/Navbar";
+import ProductDetail from "../features/product-list/components/ProductDetail";
 function ProductDetailPage() {
     return ( 
         <div>
